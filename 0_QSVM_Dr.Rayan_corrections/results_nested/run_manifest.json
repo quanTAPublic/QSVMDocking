@@ -1,0 +1,126 @@
+{
+  "qiskit_version": "1.4.5",
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.3.2",
+  "random_seed": 42,
+  "n_peptides": 80,
+  "class_balance": [
+    42,
+    38
+  ],
+  "n_groups": 43,
+  "grouping_rule": {
+    "shared_kmer_length": 5,
+    "identity_threshold": 0.7777777777777778,
+    "group_definition": "connected components of the similarity graph (union-find)"
+  },
+  "cv_design": {
+    "outer_splits": 5,
+    "outer_repeats": 20,
+    "inner_splits": 4,
+    "inner_selection_metric": "balanced_accuracy",
+    "representation_selected_in_inner_loop": true,
+    "selection_scope": "per kernel family"
+  },
+  "preprocessing": "MinMaxScaler(feature_range=(-pi, pi)) fitted on the training part of each fold only, then multiplied by the bandwidth",
+  "quantum_grid": {
+    "reps": [
+      1,
+      2
+    ],
+    "bandwidth": [
+      0.05,
+      0.1,
+      0.2,
+      0.5
+    ],
+    "C": [
+      0.1,
+      1,
+      10
+    ]
+  },
+  "classical_grids": {
+    "linear": {
+      "C": [
+        "0.1",
+        "1",
+        "10"
+      ]
+    },
+    "rbf": {
+      "C": [
+        "0.1",
+        "1",
+        "10"
+      ],
+      "gamma": [
+        "scale",
+        "0.01",
+        "0.1",
+        "1"
+      ]
+    },
+    "poly": {
+      "C": [
+        "0.1",
+        "1",
+        "10"
+      ],
+      "degree": [
+        "2",
+        "3"
+      ],
+      "gamma": [
+        "scale",
+        "0.1",
+        "1"
+      ],
+      "coef0": [
+        "0.0",
+        "1.0"
+      ]
+    }
+  },
+  "entanglement": "linear",
+  "kernel": "exact statevector fidelity |<phi(x_i)|phi(x_j)>|^2, validated against qiskit Statevector.from_instruction to ~1e-15",
+  "representations": {
+    "mean_z": {
+      "source": "zscale_dataset.csv",
+      "n_features": 5
+    },
+    "z1_positional": {
+      "source": "zscaled_z1_only.csv",
+      "n_features": 9
+    },
+    "pc1_positional_87": {
+      "source": "PC1_data_frame_87.csv",
+      "n_features": 9
+    },
+    "hopp_woods": {
+      "source": "hopp_woods.csv",
+      "n_features": 9
+    },
+    "kyte_doolittle": {
+      "source": "kyte_doolittle.csv",
+      "n_features": 9
+    },
+    "fauchere_pliska": {
+      "source": "fauchere_pliska.csv",
+      "n_features": 9
+    },
+    "euclid_centroid": {
+      "source": "euclid_centroid.csv",
+      "n_features": 9
+    },
+    "mahalanobis_centroid": {
+      "source": "mahalanobis_centroid.csv",
+      "n_features": 9
+    }
+  },
+  "excluded_representations": {
+    "moments_order1_z5.csv": "duplicate of zscale_dataset.csv (mean z-scale, order 1)",
+    "PC1_data_frame.csv": "superseded by the 87-amino-acid PCA fit",
+    "PCA_4_full_dataset_36.csv": "dimension-matched control, belongs to the diagnostics notebook"
+  }
+}

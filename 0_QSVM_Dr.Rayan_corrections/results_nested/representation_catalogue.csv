@@ -1,0 +1,9 @@
+representation,source,n_features (= n_qubits),dropped_non_numeric,dropped_label_like
+mean_z,zscale_dataset.csv,5,-,-
+z1_positional,zscaled_z1_only.csv,9,Unnamed: 0,-
+pc1_positional_87,PC1_data_frame_87.csv,9,-,-
+hopp_woods,hopp_woods.csv,9,-,-
+kyte_doolittle,kyte_doolittle.csv,9,-,-
+fauchere_pliska,fauchere_pliska.csv,9,-,-
+euclid_centroid,euclid_centroid.csv,9,-,-
+mahalanobis_centroid,mahalanobis_centroid.csv,9,-,-

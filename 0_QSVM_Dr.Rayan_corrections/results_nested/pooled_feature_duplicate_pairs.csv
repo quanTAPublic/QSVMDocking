@@ -1,0 +1,17 @@
+representation,i,j,seq_i,seq_j,label_i,label_j,group_i,group_j,same_group
+mean_z,5,12,SSKTSVALG,SSKTSAVLG,0,0,6,6,True
+mean_z,43,44,LPTHHTVRL,PTHHTVRLI,1,1,22,22,True
+z1_positional,33,37,LVPGLKSLV,LVPGFKSLV,0,0,20,20,True
+z1_positional,34,38,PGLKSLVLG,PGFKSLVLG,0,1,20,20,True
+pc1_positional_87,33,37,LVPGLKSLV,LVPGFKSLV,0,0,20,20,True
+pc1_positional_87,34,38,PGLKSLVLG,PGFKSLVLG,0,1,20,20,True
+hopp_woods,63,71,TNRVALTMG,TNKVALTMG,0,0,39,39,True
+fauchere_pliska,33,37,LVPGLKSLV,LVPGFKSLV,0,0,20,20,True
+fauchere_pliska,34,38,PGLKSLVLG,PGFKSLVLG,0,1,20,20,True
+fauchere_pliska,63,71,TNRVALTMG,TNKVALTMG,0,0,39,39,True
+euclid_centroid,33,37,LVPGLKSLV,LVPGFKSLV,0,0,20,20,True
+euclid_centroid,34,38,PGLKSLVLG,PGFKSLVLG,0,1,20,20,True
+mahalanobis_centroid,5,12,SSKTSVALG,SSKTSAVLG,0,0,6,6,True
+mahalanobis_centroid,74,77,KNPEKPHFP,KNPGKPHFP,1,1,41,41,True
+mahalanobis_centroid,75,78,PEKPHFPLA,PGKPHFPLA,1,1,41,41,True
+mahalanobis_centroid,76,79,EDDVRHHFT,EDDVRHPFT,1,1,42,42,True

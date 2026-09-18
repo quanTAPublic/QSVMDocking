@@ -1,0 +1,6 @@
+model,modal_representation,modal_share,n_distinct_representations_used,n_mean_z,n_hopp_woods,n_euclid_centroid
+ZZFeatureMap,mean_z,100%,1,100,0.0,0.0
+ZFeatureMap,mean_z,99%,2,99,1.0,0.0
+Classical linear,mean_z,99%,2,99,0.0,1.0
+Classical RBF,mean_z,100%,1,100,0.0,0.0
+Classical poly,mean_z,100%,1,100,0.0,0.0

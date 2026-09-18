@@ -1,0 +1,9 @@
+representation,n_exact_duplicate_pairs,n_near_duplicate_pairs,near_pairs_in_DIFFERENT_groups,near_pairs_with_CONFLICTING_labels,min_nn_distance,median_nn_distance
+mean_z,1,2,0,0,0.0,0.504626741412054
+z1_positional,0,2,0,1,0.05635838999999976,4.4146512095668164
+pc1_positional_87,0,2,0,1,0.052565040000000174,4.395990356022375
+hopp_woods,1,1,0,0,0.0,2.709030630273226
+kyte_doolittle,0,0,0,0,0.2999999999999998,4.565941329361035
+fauchere_pliska,0,3,0,1,0.020000000000000018,1.5702533500669231
+euclid_centroid,0,2,0,1,0.012822649069764047,1.8743950262853317
+mahalanobis_centroid,0,4,0,0,0.01737008782307825,0.8790755842750484
